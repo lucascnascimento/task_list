@@ -104,6 +104,7 @@ function removeTask(e) {
   if(e.target.parentElement.classList.contains('delete-item')){
     if(confirm('Are You Sure?')){ 
      e.target.parentElement.parentElement.remove()
+     console.log(e.target.parentElement.parentElement)
 
      // Remove from LS
      removeTaskFromLocalStorage(e.target.parentElement.parentElement)
@@ -121,7 +122,8 @@ function removeTaskFromLocalStorage(taskItem){
   }
 
   tasks.forEach(function(task, index){
-    if(taskItem.textContent === task){
+    if(taskItem.textContent === task+'x'){ //! Added the x because im using an x as the delete icon and it is being passed to the textcontent property
+      console.log(taskItem.textContent)
       tasks.splice(index, 1);
     }
   })
