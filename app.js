@@ -44,7 +44,7 @@ function getTasks(){
     // Add class
     link.className = 'delete-item secondary-content'
     // Add icon html
-    link.innerHTML = '<i class="fa fa-remove">x</i>'
+    link.innerHTML = '<i class="fa fa-remove"></i>'
     // Append the link to li
     li.appendChild(link)
 
@@ -70,7 +70,7 @@ function addTask(e){
   // Add class
   link.className = 'delete-item secondary-content'
   // Add icon html
-  link.innerHTML = '<i class="fa fa-remove">x</i>'
+  link.innerHTML = '<i class="fa fa-remove"></i>'
   // Append the link to li
   li.appendChild(link)
 
@@ -122,7 +122,7 @@ function removeTaskFromLocalStorage(taskItem){
   }
 
   tasks.forEach(function(task, index){
-    if(taskItem.textContent === task+'x'){ //! Added the x because im using an x as the delete icon and it is being passed to the textcontent property
+    if(taskItem.textContent === task){
       console.log(taskItem.textContent)
       tasks.splice(index, 1);
     }
