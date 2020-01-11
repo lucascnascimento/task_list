@@ -2,7 +2,7 @@
 
 A task list app to track tasks.
 
-Check it out at: https://lucascnascimento.github.io/task_lists/
+Check it out at: https://lucascnascimento.github.io/task_list/
 
 ## What I Learned
 
